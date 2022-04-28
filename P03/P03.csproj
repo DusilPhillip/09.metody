@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EF8E2431-60A3-4592-B5EC-75509718FFD8}</ProjectGuid>
+    <ProjectGuid>{595F9C11-25B5-4E40-B4AE-4376439768F8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>P02</RootNamespace>
-    <AssemblyName>P02</AssemblyName>
+    <RootNamespace>P03</RootNamespace>
+    <AssemblyName>P03</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -78,12 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\PoleUtil\PoleUtil.csproj">
-      <Project>{BDC991EB-C917-432C-8407-69281D3D1AC3}</Project>
-      <Name>PoleUtil</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
