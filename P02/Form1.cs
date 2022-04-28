@@ -60,8 +60,41 @@ namespace P02
             }
             return sud_soucet;
 
-        } 
-       
+        }
+
+        static private bool Posloupnost( int [] pole)
+        {
+            for (int i = 0; i < pole.Length - 1; i++)
+            {
+                if (pole[i + 1] < pole[i])
+                {
+                    return false;
+                }
+            }
+            return true;
+            
+        }
+       static private void Prohozeni(int [] pole)
+        {
+
+
+            int max = pole[0];
+            int pozicemax = 0;
+            int posledni = pole[pole.Length - 1];
+            int poziceposledni = pole.Length - 1;
+            for (int i = 0; i < pole.Length; i++)
+            {
+                if (pole[i] > max)
+                {
+                    max = pole[i];
+                    pozicemax = i;
+                }
+            }
+
+            pole[pozicemax] = posledni;
+            pole[poziceposledni] = max;
+
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -73,10 +106,7 @@ namespace P02
                 int x = Convert.ToInt32(textBox2.Text);
                 int y = Convert.ToInt32(textBox3.Text);
 
-                pole = Rozhrani(n, x, y);
-
-
-                
+                pole = Rozhrani(n, x, y);  
             }
             else
             {
@@ -96,20 +126,21 @@ namespace P02
 
 
             //metoda4
-            bool rostouci = true;
-            for( int i = 0; i < n-1; i ++) 
+
+            bool rostouci = Posloupnost(pole);
+            if (rostouci == true)
             {
-                if( pole[i+1] < pole[i])
-                {
-                    rostouci = false;
-                    break;
-                }
-                else
-                {
-                   
-                }
+                MessageBox.Show("posloupnost je rostouci");
 
             }
+            else
+            {
+                MessageBox.Show(" posloupnost roustouci neni");
+            }
+
+
+            Prohozeni(pole);
+            Kopirovani(listBox2, pole);
         }
     }
 }
