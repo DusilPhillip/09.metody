@@ -84,6 +84,20 @@ namespace PoleUtil
             pole[poziceposledni] = max;
 
         }
+        static public int[] Gen_pole(int n)
+        {
+
+            int[] pole = new int[n];
+            Random rnd = new Random();
+
+            for (int i = 0; i < n; i++)
+            {
+
+                pole[i] = rnd.Next(-100, 101);
+            }
+
+            return pole;
+        }
 
 
     }
