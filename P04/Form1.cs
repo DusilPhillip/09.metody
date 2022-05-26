@@ -25,16 +25,31 @@ namespace P04
         static private int Mocnina(int X, int cislo)
         {
 
-            
-         
-            for (int k = 1; k < X; k++)
+            int mocnina = 1;
+
+            if (X >= 0)
             {
-             cislo *= cislo;
-             }
+                for (int k = 0; k < X; k++)
 
+                {
+                    mocnina *= cislo;
+                }
+            }
+            else
+            {
+                int prom = X;
+                X = cislo * (-1);
 
+                for (int k = 0; k < X; k++)
 
-            return cislo;
+                {
+                    mocnina *= cislo;
+                }
+                mocnina = 1 / mocnina;
+
+            }
+            
+             return mocnina;
         }
 
 
