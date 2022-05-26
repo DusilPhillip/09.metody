@@ -1,4 +1,5 @@
-﻿using RetezUtil;
+﻿
+using RetezUtil;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace p08
+namespace P05
 {
     public partial class Form1 : Form
     {
@@ -17,16 +18,18 @@ namespace p08
         {
             InitializeComponent();
         }
-       
-       
-       
         
+
         private void button1_Click(object sender, EventArgs e)
         {
-            string text = textBox1.Text;
-            text = Retez.Smaz(text);
-            string[] slova3 = Retez.NaSlovo(text);
-            Retez.Zobraz(slova3, listBox1);
+            string veta = textBox1.Text;
+            int pocet;
+            int soucet;
+
+            pocet = Retez.ObsahujeCifru(veta, out soucet);
+
+            MessageBox.Show(" veta obsahuje " + pocet + " cifer a soucet lich je " + soucet);
+
         }
     }
 }

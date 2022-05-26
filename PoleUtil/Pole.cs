@@ -5,6 +5,13 @@ namespace PoleUtil
 {
     public class Pole
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="n">pocet prvku v poli</param>
+        /// <param name="dol">dolni hranice pole</param>
+        /// <param name="hor">horni hranice pole</param>
+        /// <returns></returns>
         static public int[] Rozhrani(int n, int dol = 1, int hor = 100)
         {
             int[] pole = new int[n];
@@ -21,7 +28,11 @@ namespace PoleUtil
             return pole;
 
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="lb">jmeno Listboxu</param>
+        /// <param name="pole">zadane pole</param>
         static public void Kopirovani(ListBox lb, int[] pole)
         {
             lb.Items.Clear();
@@ -32,6 +43,12 @@ namespace PoleUtil
             }
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="lich_pocet">promena pro vypocet lich</param>
+        /// <param name="pole">zadane pole</param>
+        /// <returns></returns>
         static public int SoucetPocet(out int lich_pocet, int[] pole)
         {
             int sud_soucet = 0;
@@ -50,7 +67,11 @@ namespace PoleUtil
             return sud_soucet;
 
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pole">zadane pole</param>
+        /// <returns></returns>
         static public bool Posloupnost(int[] pole)
         {
             for (int i = 0; i < pole.Length - 1; i++)
@@ -63,6 +84,10 @@ namespace PoleUtil
             return true;
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="pole">zadane pole</param>
         static public void Prohozeni(int[] pole)
         {
 
@@ -84,6 +109,11 @@ namespace PoleUtil
             pole[poziceposledni] = max;
 
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="n">pocet prvku v poli</param>
+        /// <returns></returns>
         static public int[] Gen_pole(int n)
         {
 
