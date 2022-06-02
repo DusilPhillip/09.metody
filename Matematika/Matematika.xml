@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Matematika</name>
+    </assembly>
+    <members>
+        <member name="M:Matematika.mati.Ctverec(System.Int32,System.Int32@)">
+            <summary>
+            resi uhlopricku a obsah
+            </summary>
+            <param name="a"> zadana strana </param>
+            <param name="obsah">promenna pro vypocet</param>
+            <returns>vraci uhlopricku</returns>
+        </member>
+        <member name="M:Matematika.mati.Obdelnik(System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            resi uhlopricku a obsah
+            </summary>
+            <param name="">strana a</param>
+            <param name="b">strana b</param>
+            <param name="obsah">promenna pro vypocet</param>
+            <returns>vraci uhlopricku</returns>
+        </member>
+        <member name="M:Matematika.mati.Krychle(System.Int32,System.Int32@)">
+            <summary>
+            resi uhlopricku a objem
+            </summary>
+            <param name="a">zadana strana</param>
+            <param name="objem">promenna pro vypocet</param>
+            <returns>vraci uhlopricku</returns>
+        </member>
+        <member name="M:Matematika.mati.Kvadr(System.Int32,System.Int32,System.Int32,System.Int32@)">
+            <summary>
+            resi uhlopricku a objem
+            </summary>
+            <param name="a">zadana hodnota a</param>
+            <param name="b">zadana hodnota b</param>
+            <param name="c">zadana hodnota c</param>
+            <param name="objem">promenna pro vypocet</param>
+            <returns>vraci uhlopricku</returns>
+        </member>
+        <member name="M:Matematika.mati.JePrvocislo(System.Int32)">
+            <summary>
+            zjisti T or F u prvocisla
+            </summary>
+            <param name="soucty">soucet lich cisel</param>
+            <returns> vrcai T or F prvocislo</returns>
+            
+        </member>
+        <member name="M:Matematika.mati.Mocnina(System.Int32,System.Int32)">
+            <summary>
+            cisla na urcitou mocninu
+            </summary>
+            <param name="X">kolikata mocnina</param>
+            <param name="cislo">cisla ktere umocnujeme</param>
+            <returns>vrci se umocnene cislo</returns>
+        </member>
+    </members>
+</doc>

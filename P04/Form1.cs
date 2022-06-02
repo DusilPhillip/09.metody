@@ -1,6 +1,7 @@
 ﻿
 using Matematika;
 using PoleUtil;
+using RetezUtil;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -21,11 +22,6 @@ namespace P04
         {
             InitializeComponent();
         }
-        
-
-       
-
-
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -36,29 +32,7 @@ namespace P04
             {
                 listBox1.Items.Add(i.ToString());
             }
-
-
-
-            for (int i = 0; i < n; i ++)
-            {
-                if (pole1[i] < 0)
-                {
-                    pole1[i] = 0;
-                }
-                else {
-                  
-                    pole1[i] = mati.Mocnina(x, pole1[i]);
-                
-                }
-            }
-            foreach (int i in pole1)
-            {
-                listBox2.Items.Add(i.ToString());
-            }
-            
-          
-           
-
+            Retez.Policko(pole1, n, x, listBox2);
         }
     }
 }

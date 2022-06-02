@@ -5,7 +5,7 @@ namespace P01K
     public class Posloupnost
     {
    /// <summary>
-   /// 
+   /// resi soucet,rozdil,
    /// </summary>
    /// <param name="a">1. člen aritmetické posloupnosti</param>
    /// <param name="b">2. člen aritmeticke posloupnosti</param>

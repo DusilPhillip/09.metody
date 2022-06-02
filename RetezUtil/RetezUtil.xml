@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RetezUtil</name>
+    </assembly>
+    <members>
+        <member name="M:RetezUtil.Retez.ObsahujeCifru(System.String,System.Int32@)">
+            <summary>
+            
+            </summary>
+            <param name="veta">zadany text</param>
+            <param name="soucetlich">promenna pro soucet lich cisel</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetezUtil.Retez.ObsahujeSlovo(System.String,System.String@,System.String@)">
+            <summary>
+            
+            </summary>
+            <param name="veta">zadany text</param>
+            <param name="nejdelsi">promenna pro nejdelsi slovo v textu</param>
+            <param name="nejkradsi">promenna pro nejkradsi slovo v textu</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetezUtil.Retez.Zobraz(System.Windows.Forms.Label,System.Windows.Forms.Label,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="lb1">jmeno Label1</param>
+            <param name="lb2">jmeno Label2</param>
+            <param name="slovo1">zadane slovo1</param>
+            <param name="slovo2">zadane slovo2</param>
+        </member>
+        <member name="M:RetezUtil.Retez.JeAlfanum(System.String,System.Int32@,System.Int32@,System.Int32@,System.Boolean@)">
+            <summary>
+            
+            </summary>
+            <param name="text">zadany text</param>
+            <param name="pocetcifer"> promenna pro pocet cifer</param>
+            <param name="pocetmalychpismen">promenna pro pocet malych pismen</param>
+            <param name="jineznaky">promenna pro jine znaky</param>
+            <param name="prvocislo">bool promena pro zjisteni prvocisla</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetezUtil.Retez.Smaz(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text">zadany text</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetezUtil.Retez.NaSlovo(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="text">zadany text</param>
+            <returns></returns>
+        </member>
+        <member name="M:RetezUtil.Retez.Zobraz(System.String[],System.Windows.Forms.ListBox)">
+            <summary>
+            
+            </summary>
+            <param name="slova3">zadane slovo </param>
+            <param name="listBox1">jmeno Listbox</param>
+        </member>
+    </members>
+</doc>

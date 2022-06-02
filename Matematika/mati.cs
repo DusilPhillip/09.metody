@@ -5,7 +5,7 @@ namespace Matematika
     public class mati
     {
         /// <summary>
-        /// 
+        /// resi uhlopricku a obsah
         /// </summary>
         /// <param name="a"> zadana strana </param>
         /// <param name="obsah">promenna pro vypocet</param>
@@ -19,7 +19,7 @@ namespace Matematika
             return uhlopricka;
         }
         /// <summary>
-        /// 
+        /// resi uhlopricku a obsah
         /// </summary>
         /// <param name="">strana a</param>
         /// <param name="b">strana b</param>
@@ -33,7 +33,7 @@ namespace Matematika
             return uhlopricka;
         }
         /// <summary>
-        /// 
+        /// resi uhlopricku a objem
         /// </summary>
         /// <param name="a">zadana strana</param>
         /// <param name="objem">promenna pro vypocet</param>
@@ -46,7 +46,7 @@ namespace Matematika
             return uhlopricka;
         }
         /// <summary>
-        /// 
+        /// resi uhlopricku a objem
         /// </summary>
         /// <param name="a">zadana hodnota a</param>
         /// <param name="b">zadana hodnota b</param>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Matematika;
+using System;
 using System.Windows.Forms;
 
 namespace RetezUtil
@@ -211,6 +212,32 @@ namespace RetezUtil
             {
                 listBox1.Items.Add(s);
             }
+        }
+
+
+        static public void Policko(int[] pole1, int n, int x, ListBox lisb1)
+        {
+
+
+            for (int i = 0; i < n; i++)
+            {
+                if (pole1[i] < 0)
+                {
+                    pole1[i] = 0;
+                }
+                else
+                {
+
+                    pole1[i] = mati.Mocnina(x, pole1[i]);
+
+                }
+            }
+            foreach (int i in pole1)
+            {
+                lisb1.Items.Add(i.ToString());
+            }
+
+
         }
 
     }

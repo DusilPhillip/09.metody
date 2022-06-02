@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PoleUtil</name>
+    </assembly>
+    <members>
+        <member name="M:PoleUtil.Pole.Rozhrani(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="n">pocet prvku v poli</param>
+            <param name="dol">dolni hranice pole</param>
+            <param name="hor">horni hranice pole</param>
+            <returns>varaci rnd prvky v rozhrani</returns>
+        </member>
+        <member name="M:PoleUtil.Pole.Kopirovani(System.Windows.Forms.ListBox,System.Int32[])">
+            <summary>
+            kopiruje do Listbox
+            </summary>
+            <param name="lb">jmeno Listboxu</param>
+            <param name="pole">zadane pole</param>
+        </member>
+        <member name="M:PoleUtil.Pole.SoucetPocet(System.Int32@,System.Int32[])">
+            <summary>
+            
+            </summary>
+            <param name="lich_pocet">promena pro vypocet lich</param>
+            <param name="pole">zadane pole</param>
+            <returns>vraci sud soucet</returns>
+        </member>
+        <member name="M:PoleUtil.Pole.Posloupnost(System.Int32[])">
+            <summary>
+            
+            </summary>
+            <param name="pole">zadane pole</param>
+            <returns></returns>
+        </member>
+        <member name="M:PoleUtil.Pole.Prohozeni(System.Int32[])">
+            <summary>
+            
+            </summary>
+            <param name="pole">zadane pole</param>
+        </member>
+        <member name="M:PoleUtil.Pole.Gen_pole(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="n">pocet prvku v poli</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
