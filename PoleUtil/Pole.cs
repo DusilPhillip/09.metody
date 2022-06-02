@@ -11,7 +11,7 @@ namespace PoleUtil
         /// <param name="n">pocet prvku v poli</param>
         /// <param name="dol">dolni hranice pole</param>
         /// <param name="hor">horni hranice pole</param>
-        /// <returns></returns>
+        /// <returns>varaci rnd prvky v rozhrani</returns>
         static public int[] Rozhrani(int n, int dol = 1, int hor = 100)
         {
             int[] pole = new int[n];
@@ -29,7 +29,7 @@ namespace PoleUtil
 
         }
         /// <summary>
-        /// 
+        /// kopiruje do Listbox
         /// </summary>
         /// <param name="lb">jmeno Listboxu</param>
         /// <param name="pole">zadane pole</param>
@@ -48,7 +48,7 @@ namespace PoleUtil
         /// </summary>
         /// <param name="lich_pocet">promena pro vypocet lich</param>
         /// <param name="pole">zadane pole</param>
-        /// <returns></returns>
+        /// <returns>vraci sud soucet</returns>
         static public int SoucetPocet(out int lich_pocet, int[] pole)
         {
             int sud_soucet = 0;

@@ -1,4 +1,5 @@
 ﻿
+using Matematika;
 using RetezUtil;
 using System;
 using System.Collections.Generic;
@@ -19,17 +20,26 @@ namespace P05
             InitializeComponent();
         }
         
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
             string veta = textBox1.Text;
             int pocet;
             int soucet;
+            bool jePrv = true;
 
             pocet = Retez.ObsahujeCifru(veta, out soucet);
+            jePrv = mati.JePrvocislo(soucet);
 
             MessageBox.Show(" veta obsahuje " + pocet + " cifer a soucet lich je " + soucet);
 
+            if (jePrv == true)
+            {
+                MessageBox.Show("soucet lich je prvocislo");
+
+            }
+            else MessageBox.Show("soucet lich neni prvocislo");
         }
     }
 }

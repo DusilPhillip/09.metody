@@ -77,6 +77,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Matematika\Matematika.csproj">
+      <Project>{6BA1527B-6DF0-48E0-96A8-AD6C3938DD78}</Project>
+      <Name>Matematika</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RetezUtil\RetezUtil.csproj">
       <Project>{338194B3-71D3-43C5-AF16-5B3AC7DA31A0}</Project>
       <Name>RetezUtil</Name>

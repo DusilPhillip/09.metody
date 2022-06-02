@@ -1,4 +1,5 @@
 ﻿
+using Matematika;
 using PoleUtil;
 using System;
 using System.Collections.Generic;
@@ -22,35 +23,7 @@ namespace P04
         }
         
 
-        static private int Mocnina(int X, int cislo)
-        {
-
-            int mocnina = 1;
-
-            if (X >= 0)
-            {
-                for (int k = 0; k < X; k++)
-
-                {
-                    mocnina *= cislo;
-                }
-            }
-            else
-            {
-                int prom = X;
-                X = cislo * (-1);
-
-                for (int k = 0; k < X; k++)
-
-                {
-                    mocnina *= cislo;
-                }
-                mocnina = 1 / mocnina;
-
-            }
-            
-             return mocnina;
-        }
+       
 
 
 
@@ -73,8 +46,8 @@ namespace P04
                     pole1[i] = 0;
                 }
                 else {
-
-                    pole1[i] = Mocnina(x, pole1[i]);
+                  
+                    pole1[i] = mati.Mocnina(x, pole1[i]);
                 
                 }
             }
